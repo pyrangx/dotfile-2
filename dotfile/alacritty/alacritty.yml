@@ -1,0 +1,93 @@
+#env:
+#    TERM: xterm-256color
+windows:
+  # Window dimensions (changes require restart)
+  dimensions:
+    columns: 100%
+    lines: 100%
+  # Window padding (changes require restart)
+  padding:
+    x: 0
+    y: 0
+  # Window decorations
+  decorations: Full
+font:
+  normal:
+    family: MonoLisa-ExtraLight
+    style: regular
+  bold:
+    family: MonoLisa-Medium
+    style: Bold
+  italic:
+    family: MonoLisa-MediumItalic
+    style: Italic
+  bold_italic:
+    family: MonoLisa-Black
+    style: Blod
+  size: 10.0
+  # Offset is the extra space around each character. offset.y can be thought of
+  offset:
+    x: 0
+    y: 0
+scrolling:
+  # ablescrolling.
+  history: 100
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+cursor:
+  # Cursor style
+  style: Underline
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  unfocused_hollow: true
+    #shell:
+    #program: /usr/local/bin/fish
+mouse:
+  #Click settings
+    double_click: { threshold: 300 }
+    triple_click: { threshold: 300 }
+  # If this is `true`, the cursor is temporarily hidden when typing.
+    hide_when_typing: true
+  # URL launcher
+  #selection:
+    semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+    save_to_clipboard: true
+# Background opacity
+background_opacity: 0.89
+
+# Colors (Night Owl)
+colors:
+   # Default colors
+  primary:
+    background: '#011627'
+    foreground: '#d6deeb'
+
+  cursor:
+    text: '#011627'
+    cursor: '#d6deeb'
+
+  selection:
+    background: '#1b90dd'
+
+   # Normal colors
+  normal:
+    black:   '#011627'
+    red:     '#ef5350'
+    green:   '#22da6e'
+    yellow:  '#c5e478'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#21c7a8'
+    white:   '#ffffff'
+
+   # Bright colors
+  bright:
+    black:   '#575656'
+    red:     '#ef5350'
+    green:   '#22da6e'
+    yellow:  '#ffeb95'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#7fdbca'
+    white:   '#ffffff'
+
