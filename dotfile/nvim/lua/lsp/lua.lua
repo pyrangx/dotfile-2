@@ -10,7 +10,7 @@ if vim.fn.has("unix") == 1 then
     sumneko_root_path = "/home/" .. USER .. "/.config/lua-language-server"
     sumneko_binary = "/home/" .. USER .. "/.config/lua-language-server/bin/Linux/lua-language-server"
 end
-
+--[[
 require'lspconfig'.sumneko_lua.setup {
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
     settings = {
@@ -33,3 +33,4 @@ require'lspconfig'.sumneko_lua.setup {
     }
 
 }
+--]]

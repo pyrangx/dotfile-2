@@ -1,4 +1,5 @@
 local cmp = require'cmp'
+cmp.register_source('path', require('lsp.pat').new())
   cmp.setup({
     mapping = {
 	  ['<S-Tab>'] = cmp.mapping.select_prev_item(),
@@ -8,14 +9,13 @@ local cmp = require'cmp'
        select = true,
      })
     },
-	--[[
     snippet = {
       expand = function(args)
         vim.fn["vsnip#anonymous"](args.body)
       end,
     },
-	--]]
     sources = {
+	  { name = 'path' },
       { name = 'nvim_lsp' },
     },
     documentation = {
